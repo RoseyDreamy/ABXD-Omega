@@ -1,0 +1,39 @@
+@import url('../../css/roundcorners.css');
+@import url('../../css/borders.css');
+
+#body {
+background: url(bg.png) fixed;
+background-size: 100% 100%;
+}
+
+table.outline {
+border: 3px solid #0000AA;
+}
+
+.header0 th {
+background: url(header.jpg) repeat;
+}
+
+.header1 th {
+background: url(header.jpg) repeat;
+}
+
+.threadIcon {
+background: rgba(0,0,128,0);
+}
+
+.cell0 {
+background: rgba(0,0,128,0.5);
+}
+
+.cell1 {
+background: rgba(0,0,128,0.25);
+}
+
+.cell2 {
+background: rgba(0,0,128,0.75);
+}
+
+table.post {
+background: url(post.png) repeat;
+}

@@ -1,0 +1,108 @@
+@import url('../../css/roundcorners.css');
+@import url("../../css/lightcolors.css");
+
+#body {
+	background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(white, silver); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, silver); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, silver); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, silver); /* Standard syntax */
+    color:black;
+}
+
+#body a {
+color: midnightblue;
+}
+
+.cell0 {
+color: black;
+background: white;
+    background: -webkit-linear-gradient(silver, white);
+    background: -o-linear-gradient(silver, white);
+    background: -moz-linear-gradient(silver, white);
+    background: linear-gradient(silver, white);
+}
+
+.cell1 {
+color: black;
+background: white;
+    background: -webkit-linear-gradient(silver, white);
+    background: -o-linear-gradient(silver, white);
+    background: -moz-linear-gradient(silver, white);
+    background: linear-gradient(silver, white);
+}
+
+.cell2 {
+color: black;
+background: white;
+    background: -webkit-linear-gradient(silver, white);
+    background: -o-linear-gradient(silver, white);
+    background: -moz-linear-gradient(silver, white);
+    background: linear-gradient(silver, white);
+}
+
+.header0 th {
+color: black;
+background: white;
+    background: -webkit-linear-gradient(silver, white);
+    background: -o-linear-gradient(right, silver, white);
+    background: -moz-linear-gradient(silver, white);
+    background: linear-gradient(silver, white);
+}
+
+.header1 th {
+color: white;
+background: white;
+    background: -webkit-linear-gradient(silver, black);
+    background: -o-linear-gradient(right, silver, black);
+    background: -moz-linear-gradient(silver,black);
+    background: linear-gradient(silver, black);
+}
+
+
+.PoRT th {
+color: white;
+background: white;
+    background: -webkit-linear-gradient(silver, black);
+    background: -o-linear-gradient(right, silver, white);
+    background: -moz-linear-gradient(silver,black);
+    background: linear-gradient(silver, black);
+}
+
+
+button.expander {
+	color: white;
+	border: 1px solid rgba(160, 160, 255, 0.5);
+}
+
+button, input[type="submit"] {
+	border: 1px solid white;
+	background: silver;
+	color: black;
+}
+
+input[type="text"], input[type="password"], input[type="file"], input[type="email"], select, textarea {
+	border: 1px solid silver;
+	background: powderblue;
+	color: black;
+}
+
+input[type="checkbox"], input[type="radio"]
+{
+	border: 1px solid rgba(160, 160, 255, 0.5);
+	background: rgba(0, 0, 0, 0.500);
+	color: white;
+}
+
+span.nc01 { 
+color: #000000; 
+}
+
+.post {
+color: black;
+border: 1px solid black;
+    background: -webkit-linear-gradient(silver, white);
+    background: -o-linear-gradient(right, silver, white);
+    background: -moz-linear-gradient(silver, white);
+    background: linear-gradient(silver, white);
+}

@@ -1,0 +1,93 @@
+@import url('../../css/roundcorners.css');
+
+#body {
+background: skyblue url(bliss.jpg) fixed;
+background-size: 100% 100%;
+font-family:Tahoma,sans-serif;
+}
+
+.header0 th {
+background: url(taskbar-texture.jpg) repeat;
+}
+
+.header1 th {
+background: url(taskbar-texture.jpg) repeat;
+}
+
+.cell0 {
+background: url(startmenu-texture.jpg);
+background-size: 100% 100%;
+}
+
+.cell1 {
+background: url(startmenu-texture.jpg);
+background-size: 100% 100%;
+}
+
+.cell2 {
+background: url(startmenu-texture.jpg);
+background-size: 100% 100%;
+}
+
+td.post {
+background: skyblue;
+color: white;
+}
+
+table.post {
+background: skyblue;
+color: white;
+}
+
+button, input[type="submit"]
+{
+	border: 1px solid rgba(160, 160, 255, 0.175);
+	background: rgba(160, 160, 255, 0.200);
+	border-radius: 8px;
+	color: white;
+}
+
+input[type="text"], input[type="password"], input[type="file"], input[type="email"], select, textarea
+{
+	border: 1px solid rgba(160, 160, 255, 0.175);
+	background: rgba(0, 0, 0, 0.500);
+	color: white;
+}
+
+input[type="checkbox"], input[type="radio"]
+{
+	border: 1px solid rgba(160, 160, 255, 0.175);
+	background: rgba(0, 0, 0, 0.500);
+	color: white;
+	border-radius: 2px;
+}
+
+input[type="radio"]
+{
+	border-radius: 8px;
+}
+
+div#tabs {
+	margin-bottom: 1px;
+}
+
+div#tabs button
+{
+	border: 1px solid rgba(160, 160, 255, 0.175);
+	border-bottom: 0px none;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 32px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	padding-right: 16px;
+	margin-bottom: 0px;
+}
+
+div#tabs button.selected
+{
+	position: static;
+	z-index: -100;
+	border-bottom: 1px solid #181826;
+	padding-bottom: 1px;
+	margin-bottom: -1px;
+}

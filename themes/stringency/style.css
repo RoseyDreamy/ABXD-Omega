@@ -1,0 +1,119 @@
+@import url('../../css/borders.css');
+
+A:link		{color:#5090AF}
+A:visited	{color:#406090}
+A:active	{color:#709AAF}
+A:hover		{color:#FFCF00}
+
+A:link,A:visited,A:active,A:hover{
+  text-decoration:none;
+  font-weight:bold;
+}
+
+#body{
+  background: url(back2c.png) #303030;
+  color: #e0e0ff;
+  font-family: verdana, geneva, sans-serif;
+}
+
+table{
+  color: #e0e0ff;
+  background: url(25black.png);
+  font-size: 1em;
+}
+
+table.outline{
+  background: url(25black.png);
+/*  background: black; */
+  border: #666666 1px solid;
+}
+
+.header0 th{
+  background: url(backh.png);
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #000000;
+}
+
+.header1 th{
+  background: url(backh.png);
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #000000;
+}
+
+tr.c{
+  background: url(backc2.png) #303048;
+  text-align: center;
+  font-size: 0.9em;
+  color: #EEEEEE;
+}
+
+.threadIcon {
+  border-left: #000000 1px solid;
+  border-top:  #000000 1px solid;
+  padding: 1px;
+}
+
+td.nb{
+  border: 0px none;
+  padding: 1px;
+}
+
+#header {
+  border-left: 0;
+  border-right: 0;
+  padding: 1px;
+}
+
+.cell0{
+  background: url(back2t1.png);
+}
+
+.cell1{
+  background: url(back2t2.png);
+}
+
+.cell2{
+  background: url(back2t3.png);
+}
+
+.smallFonts{
+  font-size: 0.8em;
+}
+
+textarea,input,select,button{
+  border:    #777777 ridge 2px;
+  background:#000000;
+  color:     #FFFFFF;
+  font: 1em verdana;
+}
+
+radio{
+  border: none;
+  background: none;
+  color: #DDDDDD;
+  font: 1em verdana;
+}
+
+submit{
+  border: #FFD040 ridge 2px;
+  color: #FFD040;
+  font-weight: bold;
+}
+
+ins{
+  background: url(back2t1.png);
+  border: 1px #505050 dashed;
+  text-decoration: none;
+  color: #404040;
+}
+
+del{
+  background: url(back2t3.png);
+  border: 1px #101010 dashed;
+  text-decoration: none;
+  color: #FF4000;
+}

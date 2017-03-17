@@ -1,0 +1,39 @@
+#body {
+background-color: #C0C0C0;
+color: black;
+font-family:Verdana,Arial,sans-serif !important;
+}
+
+#body a {
+color: #0000FF;
+}
+
+.header0 th {
+background-color: black;
+color: white;
+}
+
+.header1 th {
+background-color: black;
+color: white;
+}
+
+.cell0 {
+background-color: #DCDCDC;
+color: black;
+}
+
+.cell1 {
+background-color: #DCDCDC;
+color: black;
+}
+
+.cell2 {
+background-color: #DCDCDC;
+color:black;
+}
+
+table.post {
+background-color:black;
+color:white;
+}

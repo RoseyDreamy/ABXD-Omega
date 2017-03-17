@@ -1,0 +1,140 @@
+@import url('../../css/borders.css');
+@import url('../../css/roundcorners.css');
+
+.faq
+{
+	border-color: #0C0C0C;
+	background: #05012E;
+}
+
+#body
+{
+	background-image: url(sqd8ugU.png), url(cadOkCh.png);
+	background-position: left top, left top;
+	background-repeat: repeat-x, repeat;
+}
+
+.header0, .header1
+{
+	border-color: #0C0C0C;
+}
+
+.header0 th
+{
+	background: rgba(50, 50, 50, 0.85);
+	color: #EEEEEE;
+}
+
+.header1 th
+{
+	background: rgba(15, 15, 15, 0.85);
+}
+
+.cell2
+{
+	background: rgba(40, 40, 40, 0.85);
+}
+
+.cell1, table.post td.side, table.post td.userlink, table.post td.meta
+{
+	background: rgba(15, 15, 15, 0.85);
+}
+
+.cell0, table.post td.post, .faq
+{
+	background: rgba(25, 25, 25, 0.85);
+}
+
+.errort
+{
+	background: rgba(50, 50, 50, 0.85);
+	border-color: #0C0C0C;
+}
+
+.errorc
+{
+	background: rgba(30, 30, 30, 0.85);
+	border-color: #0C0C0C;
+}
+
+
+td, th
+{
+	border-color: #0C0C0C;
+}
+
+
+table.post td.post
+{
+	border-color: #0C0C0C;
+}
+
+button, input[type="submit"]
+{
+	border: 1px solid #00C0C0C;
+	background: rgba(50, 50, 50, 0.85);
+	color: #EEEEEE;
+}
+
+input[type="text"], input[type="password"], input[type="file"], input[type="email"], select, textarea
+{
+	background: rgba(15, 15, 15, 0.90);
+	border: 1px solid #0C0C0C;
+	color: white;
+}
+
+input[type="checkbox"], input[type="radio"]
+{
+	background: rgba(15, 15, 15, 0.90);
+	border: 1px solid #0C0C0C;
+	color: #B7E6FF;
+}
+
+input[type="radio"]
+{
+	border-radius: 8px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="file"]:focus, input[type="email"]:focus, select:focus, textarea:focus
+{
+	border-color: rgba(50, 50, 50, 0.85);
+}
+
+div#tabs button.selected
+{
+	border-bottom: 1px solid rgba(50, 50, 50, 0.85);
+	background: rgba(50, 50, 50, 0.85);
+}
+
+a, a:link, a:visited
+{
+	color: #0085E5;
+        text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.6), 0px 1px 1px rgba(0, 0, 0, 0.6), -1px 0px 1px rgba(0, 0, 0, 0.6), 0px -1px 1px rgba(0, 0, 0, 0.6);
+}
+
+a:hover
+{
+	color: #FFF !important;
+        text-shadow: 0px 0px 1px #FFF;
+}
+
+a:active
+{
+	color: #FFF !important;
+        text-shadow: 0px 0px 3px #FFF;
+}
+
+table.post
+{
+	box-shadow: 5px 5px 40px #000000;
+}
+
+.outline
+{
+	box-shadow: 5px 5px 40px #000000;
+}
+
+#header > table:nth-child(1)
+{
+	box-shadow: 0px 0px 0px !important;
+}

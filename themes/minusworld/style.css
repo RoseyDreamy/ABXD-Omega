@@ -1,0 +1,102 @@
+/* META
+Minus World (blackhole89)
+
+*/
+@import url('../../css/borders.css');
+A:link		{color:#a5a}
+A:visited	{color:#979}
+A:active	{color:#fef}
+A:hover		{color:#fef}
+
+A:link,A:visited,A:active,A:hover{
+  text-decoration:none;
+  font-weight:bold;
+}
+
+#body{
+  background: url(bg.png) #311;
+/*	background: url('../img/fishbg2.png');
+*/  color: #dca;
+  font-family: verdana, geneva, sans-serif;
+/*  background-attachment: fixed; laggy piece of shit */
+}
+
+table{
+  color: #cad;
+  font-size: 1em;
+}
+
+table.outline{
+/*  background: black; */
+  border: #772277 1px solid;
+}
+
+table.post{
+background: black;
+  border: #772277 1px solid;
+}
+
+.header0 th{
+  background: url(tdbgh.png);
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #DDDDDD;
+}
+
+.header1 th{
+  background: url(tdbgh.png);
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #DDDDDD;
+}
+
+.threadIcon{
+  background: url(tdbgc.png);
+  text-align: center;
+  font-size: 0.9em;
+  color: #EEEEEE;
+}
+
+#header{
+  border-left: 0;
+  border-right: 0;
+  padding: 1px;
+}
+
+.cell1{
+  background: url('tdbg3.png');
+}
+
+.cell2{
+  background: url('tdbg2.png');
+}
+
+.cell3{
+  background: url('tdbg1.png');
+}
+
+.smallFonts{
+  font-size: 0.8em;
+}
+
+textarea,input,select,button{
+  border:    #996699 ridge 2px;
+  background:#000000;
+  color:     #FFFFFF;
+  font: 1em verdana;
+}
+
+.radio{
+  border: none;
+  background: none;
+  color: #DDDDDD;
+  font: 1em verdana;
+}
+
+submit{
+  border: #b5e ridge 2px;
+  color: #de9;
+  font-weight: bold;
+}

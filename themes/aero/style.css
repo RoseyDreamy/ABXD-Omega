@@ -1,0 +1,91 @@
+@import url('../../css/roundcorners.css');
+@import url('../../css/borders.css');
+
+#body {
+background: rgb(62,0,39) url(windows-vista-wallpaper-8.jpg) fixed repeat !important;
+background-size: 100% !important;
+font-family:"Segoe UI",sans-serif;
+}
+
+#body a {
+color: #7fffe9;
+}
+
+#body a:hover {
+color: #ffffff;
+}
+
+.cell0 {
+background: url(aero_glass_clipart_texture_by_diamond00744-d671l1n.png) repeat fixed !important;
+background-size: 100% !important;
+}
+
+.cell1 {
+background: rgba(0,0,0,0.25) url(aero_glass_clipart_texture_by_diamond00744-d671l1n.png) repeat fixed !important;
+background-size: 100% !important;
+}
+
+.cell2 {
+background: rgba(192,192,192,0.25) url(aero_glass_clipart_texture_by_diamond00744-d671l1n.png) repeat fixed !important;
+background-size: 100% !important;
+}
+
+.header0 th {
+background: rgba(0,0,0,0.5) url(aero_glass_clipart_texture_by_diamond00744-d671l1n.png) fixed !important;
+background-size: 100% !important;
+}
+
+.header1 th {
+background: rgba(0,0,0,0.5) url(aero_glass_clipart_texture_by_diamond00744-d671l1n.png) fixed !important;
+background-size: 100% !important;
+}
+
+td.post {
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+border: 1px round #000000;
+color: white;
+background: url(aero_glass_clipart_texture_by_diamond00744-d671l1n.png) repeat;
+background-size: 100% !important;
+}
+
+.PoRT th {
+background: rgba(192,192,192,0.5) !important;
+}
+
+span.nc20 { 
+color: #d694b5; 
+}
+
+button.expander
+{
+	color: white;
+	border: 1px solid rgba(160, 160, 255, 0.5);
+}
+
+button, input[type="submit"]
+{
+	border: 1px solid rgba(160, 160, 255, 0.5);
+	background: rgba(160, 160, 255, 0.200);
+	border-radius: 8px;
+	color: white;
+}
+
+input[type="text"], input[type="password"], input[type="file"], input[type="email"], select, textarea
+{
+	border: 1px solid rgba(160, 160, 255, 0.5);
+	background: rgba(0, 0, 0, 0.500);
+	color: white;
+}
+
+input[type="checkbox"], input[type="radio"]
+{
+	border: 1px solid rgba(160, 160, 255, 0.5);
+	background: rgba(0, 0, 0, 0.500);
+	color: white;
+	border-radius: 2px;
+}
+
+input[type="radio"]
+{
+	border-radius: 8px;
+}
