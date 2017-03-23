@@ -1,12 +1,10 @@
 	<meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8" />
 	<meta name="description" content="<?php print Settings::get('metaDescription'); ?>" />
 	<meta name="keywords" content="<?php print Settings::get('metaTags'); ?>" />
-<meta name="google-site-verification" content="5Eac2hl3LYvGjvklhv2-5zRc_wkjy_tty7LdCoU9Opw" />
 	<link rel="shortcut icon" type="image/x-icon" href="<?php print $layout_favicon;?>" />
 	<link rel="stylesheet" type="text/css" href="<?php print resourceLink("css/common.css");?>" />
 	<link rel="stylesheet" type="text/css" href="<?php print resourceLink("js/spectrum.css");?>" />
 	<link rel="stylesheet" href="<?php print resourceLink("css/font-awesome.min.css");?>">
-	<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
 	
 	<script type="text/javascript" src="<?php print resourceLink("js/jquery.js");?>"></script>
 	<script type="text/javascript" src="<?php print resourceLink("js/tricks.js");?>"></script>
