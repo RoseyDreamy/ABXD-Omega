@@ -279,8 +279,14 @@ if(!$mobileLayout)
 				</td>
 				<td style=\"vertical-align: top; border: 0px none;\">
 	");
-
-	include("usercomments.php");
+	if(Settings::get("gcomments"))
+	{
+		include("usercomments.php");
+	}
+	elseif($loguserid)
+	{
+		include("usercomments.php");
+	}
 
 	print "
 				</td>
