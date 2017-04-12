@@ -70,7 +70,7 @@ if(isset($_POST['name']))
 	else if(ReCaptcha())
     	$err = __("You must prove to not be a robot.");
     	
-    /*else if($_POST['passkey'] !== "PASSKEY_GOES_HERE) //ugh
+    /*else if($_POST['passkey'] !== "PASSKEY_GOES_HERE") //ugh
 		$err = __("Invalid passkey. If you need one, contact a staff member via outside the board.");*/
 	else if($haveSecurimage)
 	{
@@ -126,6 +126,8 @@ $sex = 2;
 if(isset($_POST["sex"]))
 	$sex = validateSex($_POST["sex"]);
 
+<script src='https://www.google.com/recaptcha/api.js'></script>
+	
 echo "
 <script src=\"".resourceLink('js/register.js')."\"></script>
 <script src=\"".resourceLink('js/zxcvbn.js')."\"></script>
@@ -176,6 +178,13 @@ echo "
 				<input type=\"text\" id=\"passkey\" name=\"passkey\"maxlength=\"60\" />
 			</td>
 		</tr> -->
+		<td class=\"cell2\">
+                ".__("CAPTCHA")."
+            </td>
+            <td class=\"cell1\">
+                <div class=\"g-recaptcha\" data-sitekey=\"public_key_goes_here\"></div>
+            </td>
+        </tr>
 ";
 
 if($haveSecurimage)
