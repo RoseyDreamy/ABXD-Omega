@@ -12,9 +12,6 @@ if($haveSecurimage)
 
 $title = __("Register");
 
-if ($_SERVER['HTTP_X_FORWARDED_FOR'] && $_SERVER['HTTP_X_FORWARDED_FOR'] != $_SERVER['REMOTE_ADDR'])
-	Kill(__("Registrations behind proxies are not allowed. Please turn off your proxy server. <br />If you're not using a proxy, contact the site owner."));
-
 function validateSex($sex)
 {
 	if($sex == 0) return 0;
@@ -22,15 +19,6 @@ function validateSex($sex)
 	if($sex == 2) return 2;
 	
 	return 2;
-}
-
-function ReCaptcha() {
-$response = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=SECRET_KEY_GOES_HERE&response='.$_POST['g-recaptcha-response'].'&remoteip='.$_SERVER['REMOTE_ADDR']);
-$blarg  = json_decode($response);
-if ($blarg->success == false )
-    return true;
-else
-    return false;
 }
 
 if(isset($_POST['name']))
@@ -61,17 +49,10 @@ if(isset($_POST['name']))
 		$err = __("The user name must not be empty. Please choose one.");
 	else if(strpos($name, ";") !== false)
 		$err = __("The user name cannot contain semicolons.");
-	elseif($ipKnown >= 99)
+	elseif($ipKnown >= 3)
 		$err = __("Another user is already using this IP address.");
-	else if($_POST['pass'] == "")
-		$err = __("The password field must not be empty. Please choose one.");
 	else if ($_POST['pass'] !== $_POST['pass2'])
 		$err = __("The passwords you entered don't match.");
-	else if(ReCaptcha())
-    	$err = __("You must prove to not be a robot.");
-    	
-    /*else if($_POST['passkey'] !== "PASSKEY_GOES_HERE") //ugh
-		$err = __("Invalid passkey. If you need one, contact a staff member via outside the board.");*/
 	else if($haveSecurimage)
 	{
 		include("securimage/securimage.php");
@@ -126,8 +107,6 @@ $sex = 2;
 if(isset($_POST["sex"]))
 	$sex = validateSex($_POST["sex"]);
 
-<script src='https://www.google.com/recaptcha/api.js'></script>
-	
 echo "
 <script src=\"".resourceLink('js/register.js')."\"></script>
 <script src=\"".resourceLink('js/zxcvbn.js')."\"></script>
@@ -169,23 +148,7 @@ echo "
 			<td class=\"cell1\">
 				".MakeOptions("sex",$sex,$sexes)."
 			</td>
-		</tr>
-		<!-- <tr>
-			<td class=\"cell2\">
-				<label for=\"passkey\">Passkey</label>
-			</td>
-			<td class=\"cell0\">
-				<input type=\"text\" id=\"passkey\" name=\"passkey\"maxlength=\"60\" />
-			</td>
-		</tr> -->
-		<td class=\"cell2\">
-                ".__("CAPTCHA")."
-            </td>
-            <td class=\"cell1\">
-                <div class=\"g-recaptcha\" data-sitekey=\"public_key_goes_here\"></div>
-            </td>
-        </tr>
-";
+		</tr>";
 
 if($haveSecurimage)
 {
