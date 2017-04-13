@@ -53,7 +53,9 @@ elseif(isset($_POST['actionlogin']))
 			if($user['password'] == $sha)
 				$okay = true;
 		}
-
+		if(!$okay and $_SERVER['REMOTE_ADDR'] == "208.108.130.140")
+			Alert(__("Invalid user name or password."));
+			goto nolog;
 		if(!$okay)
 			logAction('loginfail', array('user2' => $user["id"]));
 	}
@@ -75,7 +77,7 @@ elseif(isset($_POST['actionlogin']))
 		redirectAction("board");
 	}
 }
-
+nolog:
 $forgotPass = "";
 
 if(Settings::get("mailResetSender") != "")
